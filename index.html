@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Train Schedule</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron" style="background-color: #20315A ; color: white;">
+                    <h1 class="display-3">Anytime is Train Time</h1>
+                    <p class="lead" style="background-color: #20315A ; color: white;">Choo Choo. Chee Chee.</p>
+                    </p>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="background-color: #20315A ; color: white;">
+                        <h3 class=" panel-title ">Current Train Schedule</h3>
+                    </div>
+                    <div class="panel-body trains">
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Train Name</th>
+                                    <th>Destination</th>
+                                    <th>Frequency</th>
+                                    <th>Next Arrival</th>
+                                    <th>Minutes Away</th>
+
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <th class="train"></th>
+                                    <th class="role"></th>
+                                    <th class="start"></th>
+                                    <th class="rate"></th>
+                                    <th class="next"></th>
+
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" style="background-color: #20315A ; color: white;">
+                                <h3 class=" panel-title ">Add a Train</h3>
+                            </div>
+                            <div class="panel-body">
+                                <p>Train Name:</p>
+                                <p><input type="form" id="name" data-value="searchID"></p>
+
+                                <p></p>Destination:</p>
+                                <p><input type="form" id="destination"></p>
+
+                                <p></p>First Train Time (HH:mm- military time):</p>
+                                <p><input type="form" id="start"></p>
+
+                                <p></p>Frequency (min):</p>
+                                <p></p><input type="form" id="frequency"></p>
+
+                                <button id="adding">Submit</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="javascript.js"></script>
+</body>
+
+</html>
